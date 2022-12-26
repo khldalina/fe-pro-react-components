@@ -1,20 +1,14 @@
 import React from 'react';
-import { Header } from './components/Header/Header';
-import { Content } from './components/Content/Content';
-import { Footer } from './components/Footer/Footer';
+import Footer from './Components/Footer';
+import Header from './Components/Header';
+import Content from './Components/Content';
 
 const Application = () => {
-  return (
-      <React.StrictMode>
-        <div className="wrapper">
-          <div className={'wrapper'}>
-            <Header />
-            <Content />
-            <Footer />
-          </div>
-        </div>
-      </React.StrictMode>
-  );
+    return (<div className="wrapper">
+        <Header />
+        <Content />
+        <Footer />
+    </div>)
 };
 
 export default Application;
